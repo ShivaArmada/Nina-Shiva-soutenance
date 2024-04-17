@@ -6,6 +6,11 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+button,
+li span,
+a {
+	cursor: pointer;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -91,7 +96,7 @@ body {
 }
 
 #gallery {
-		min-height: 100vh; */
+		min-height: 100vh; 
 }
 .title{
 	text-align: center;
