@@ -1,11 +1,53 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./fonts/Spectral-Italic-300.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/Spectral-Italic-400.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./fonts/Spectral-Italic-800.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./fonts/Spectral-Regular-400.ttf') format('truetype');
+  }
+
+
+
 body {
 	max-width: 1920px;
 	margin: auto;
 }
 
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
+}
+a {
+	text-decoration: none;
+	color: #000;
 }
 
 button,
@@ -76,7 +118,7 @@ a {
 
 .picture {
 	flex: 1;
-	margin: 0 20px;
+	margin: 0 50px;
 	z-index: 0;
 }
 
@@ -97,10 +139,13 @@ a {
 }
 
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	margin-bottom: 25px;
+	line-height: 1.5;
+
 }
 
 #about-me p {
@@ -124,6 +169,11 @@ a {
 
 .gallery .nav {
 	justify-content: center;
+}
+.gallery ul li span:hover {
+	background-color: #5B5824;
+	color: white;
+	border-radius: 0;
 }
 
 .nav-pills .nav-link.active,
@@ -170,7 +220,7 @@ a {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	width: 70%;
 	margin: auto;
@@ -178,14 +228,14 @@ a {
 }
 
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 
 }
 
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -288,6 +338,10 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+#contact-infos {
+	margin-top: 25px;
+}
+
 
 @media all and (max-width: 1180px) {
 	.picture {
