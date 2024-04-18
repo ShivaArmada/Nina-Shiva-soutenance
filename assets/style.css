@@ -11,6 +11,10 @@ li span,
 a {
 	cursor: pointer;
 }
+.carousel-inner img {
+	width: 1519px;
+	height: 703px;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -73,7 +77,8 @@ a {
 }
 
 .picture img {
-	width: 100%;
+	width: 426px;
+	height: 425px;
 
 }
 #about-me {
@@ -97,6 +102,10 @@ a {
 
 #gallery {
 		min-height: 100vh; 
+}
+#gallery img {
+	width: 424px;
+	height: 424px;
 }
 .title{
 	text-align: center;
@@ -215,6 +224,10 @@ a {
 	bottom: 0;
 	right: 0;
 	z-index: -1;
+}
+#contact img {
+	width: 418px;
+	height: 418px;
 }
 .form-container {
 	flex : 2;
