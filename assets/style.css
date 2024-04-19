@@ -101,7 +101,6 @@ a {
 	display: flex;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
-	padding-block: 100px;
 	position: relative;
 }
 
@@ -120,6 +119,7 @@ a {
 	flex: 1;
 	margin: 0 50px;
 	z-index: 0;
+	margin-top: 200px;
 }
 
 .picture img {
@@ -129,20 +129,23 @@ a {
 }
 
 #about-me {
-	flex: 2
+	flex: 2;
+	margin-left: 50px;
 }
 
 .about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
+	margin-top: 100px;
 	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 50px;
 }
 
 .about-me__introduction {
 	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+	width: 70%;
+	font-size: medium;
 	margin-bottom: 25px;
 	line-height: 1.5;
 
@@ -150,7 +153,13 @@ a {
 
 #about-me p {
 	width: 80%;
-	font-size: 14px;
+	font-size: 20px;
+	line-height: 1.5;
+	padding-top: 2%;
+	font-family: 'Spectral', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	margin-bottom: 60px;
 }
 
 #gallery {
@@ -165,6 +174,8 @@ a {
 .title {
 	text-align: center;
 	padding-block: 2em;
+	font-size: 30px;
+	font-weight: 800;
 }
 
 .gallery .nav {
@@ -231,6 +242,8 @@ a {
 	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 35px;
+	line-height: 1.5em;
 
 }
 
@@ -244,6 +257,11 @@ a {
 	margin: auto;
 	background-color: #A8D5D8;
 	position: relative;
+}
+#services title {
+	font-size: 30px;
+	font-weight: 800;
+	text-align: center;
 }
 
 #services .container::before {
@@ -262,6 +280,17 @@ a {
 	display: flex;
 	padding: 2em 0;
 
+}
+
+.service__description {
+	z-index: 1;
+	align-self: center;
+}
+
+.service__description p {
+	font-size: 18px;
+	line-height: 1.5em;
+	padding-top: 25px;
 }
 
 .service {
