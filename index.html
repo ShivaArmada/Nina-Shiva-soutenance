@@ -56,7 +56,7 @@
 	<header>
 
 		<div class="top-header">
-			<h1 class="name" itemprop="name">Nina Carducci</h1>
+			<h1 itemprop="name" id="businessName">Nina Carducci</h1>
 			<div class="nav" itemscope itemtype="http://schema.org/WebPageElement">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -119,7 +119,7 @@
 
 		<div id="about" itemscope itemtype="http://schema.org/Person">
 			<div class="picture left">
-				<img src="./assets/images/nina.png" loading="lazy" alt="author-img" itemprop="image" id="image" itemscope itemtype="http://schema.org/ImageObject">
+				<img src="./assets/images/nina.png" loading="lazy" alt="author-img" itemprop="image url" id="image" itemscope itemtype="http://schema.org/ImageObject">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title" itemprop="headline">A propos de moi</h2>
@@ -265,7 +265,7 @@
 						<textarea name="message" id="message" cols="30" rows="10" itemprop="message"></textarea>
 						<input type="submit" value="Envoyer">
 					</form>
-					<span itemscope itemtype="http://schema.org/LocalBusiness" itemid="#business" itemref="name priceRange image" class="local-infos">
+					<span itemscope itemtype="http://schema.org/LocalBusiness" itemid="#business" itemref="businessName priceRange image" class="local-infos">
 						<p id="contact-infos">Pour prendre rendez-vous directement, je suis joignable par les moyens suivants :</p><br>
 						<p id="infos-concret">
 							Mon adresse : 
