@@ -12,6 +12,7 @@
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="7 days">
 	<link rel="icon" href="./assets/images/nina.png">
+	<meta itemprop="priceRange" content="$$" id="priceRange">
 
 	<!--balises pour le marketing sur les réseaux sociaux-->
 	<meta property="og:type" content="website">
@@ -55,7 +56,7 @@
 	<header>
 
 		<div class="top-header">
-			<h1 class="name" itemprop="Creator">Nina Carducci</h1>
+			<h1 class="name" itemprop="name">Nina Carducci</h1>
 			<div class="nav" itemscope itemtype="http://schema.org/WebPageElement">
 				<ul>
 					<li><a href="#about">À propos</a></li>
@@ -118,8 +119,7 @@
 
 		<div id="about" itemscope itemtype="http://schema.org/Person">
 			<div class="picture left">
-				<img src="./assets/images/nina.png" loading="lazy" alt="author-img" itemprop="contentUrl" itemscope
-					itemtype="http://schema.org/ImageObject">
+				<img src="./assets/images/nina.png" loading="lazy" alt="author-img" itemprop="image" id="image" itemscope itemtype="http://schema.org/ImageObject">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title" itemprop="headline">A propos de moi</h2>
@@ -265,14 +265,21 @@
 						<textarea name="message" id="message" cols="30" rows="10" itemprop="message"></textarea>
 						<input type="submit" value="Envoyer">
 					</form>
-					<span itemscope itemtype="http://schema.org/LocalBusiness" class="local-infos">
-						<p id="contact-infos">Pour prendre rendez-vous directement, je suis joignable par les moyens
-							suivants :</p><br>
-						<p id="infos-concret">Mon adresse : <a href="https://urlz.fr/qkzy" target="_blank" itemprop="address">68 avenue
-								Alsace-Lorraine, 33200 Bordeaux.</a><br>
-							Mon numéro de téléphone : <a href="tel:+33556677889" itemprop="telephone">05 56 67 78
-								89</a>.<br>
-							Je réponds au téléphone du lundi au vendredi de 10 h à 19 h.</p>
+					<span itemscope itemtype="http://schema.org/LocalBusiness" itemid="#business" itemref="name priceRange image" class="local-infos">
+						<p id="contact-infos">Pour prendre rendez-vous directement, je suis joignable par les moyens suivants :</p><br>
+						<p id="infos-concret">
+							Mon adresse : 
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<a href="https://urlz.fr/qkzy" target="_blank">
+									<span itemprop="streetAddress">68 avenue Alsace-Lorraine,</span>
+									<span itemprop="postalCode">33200</span>
+									<span itemprop="addressLocality">Bordeaux</span>.
+								</a>
+							</div><br>
+							Mon numéro de téléphone : 
+							<a href="tel:+33556677889" itemprop="telephone">05 56 67 78 89</a>.<br>
+							Je réponds au téléphone du lundi au vendredi de 10 h à 19 h.
+						</p>
 					</span>
 				</div>
 				<div class="picture right">
