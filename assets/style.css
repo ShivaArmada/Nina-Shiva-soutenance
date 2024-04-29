@@ -521,7 +521,7 @@ input[type="submit"] {
     }
 
     .form-container {
-        transform: translateX(15%);
+        margin-left: 25%;
     }
 
     #no-hesitation {
@@ -587,7 +587,7 @@ input[type="submit"] {
     }
 
     .gallery ul {
-        margin-left: 40px
+        margin-left: 20px;
     }
 
     .gallery-items-row img {
@@ -682,6 +682,9 @@ header button {
         padding-left: 50px;
 
     }
+    .picture.left {
+        
+    }
     #camera-l {
         transform: translateX(-25%);
     }
@@ -726,9 +729,9 @@ header button {
         height: 200px;
         object-fit: cover;
         /* Cette propriété permet de maintenir les proportions de l'image */
-        padding-right: 100px;
         
-        margin-left: 40px
+        
+        margin-left: 100px;
     }
 
     #about-me {
@@ -776,5 +779,19 @@ header button {
     #contact img{
         width: 300px;
         height: 200px;
+    }
+    .gallery-items-row img {
+        width: 100%;
+        
+        object-fit: cover;
+        /* Cette propriété permet de maintenir les proportions de l'image */
+        margin-left: 30px;
+    }
+    #camera-l {
+        transform: translateX(-15%) !important;
+    }
+    .item-column {
+        width: 300px;
+        height: 300px;
     }
 }
